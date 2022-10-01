@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Greed from './components/Greed';
 import ClassComponent from './components/ClassComponent';
+import Helow from './components/Helow';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </header> */}
       <Greed />
       <ClassComponent></ClassComponent>
+      <Helow></Helow>
     </div>
   );
 }
