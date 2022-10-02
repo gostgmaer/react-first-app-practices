@@ -6,6 +6,7 @@ import Helow from './components/Helow';
 // import Welcome from './components/welcome';
 import Message from './components/message'
 import State from './components/state';
+import Counter from './components/Counter';
 
 
 
@@ -36,7 +37,8 @@ function App() {
         <Greed name="souvik" /> */}
         {/* <Welcome name="Child Component"  ></Welcome> */}
    
-        <Message></Message>
+        {/* <Message></Message> */}
+        <Counter></Counter>
     </div>
   );
 }
