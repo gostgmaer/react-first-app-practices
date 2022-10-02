@@ -10,9 +10,22 @@ class Counter extends Component {
     }
     increament() {
         // this.State.count=this.state.count+1
-        this.setState({
-            count: this.state.count + 1
-        }, () => { console.log(this.state.count); })
+        // this.setState({
+        //     count: this.state.count + 1
+        // }, () => { console.log(this.state.count); })
+        this.setState((previousState)=>({
+            count:previousState.count+1 
+        }))
+        console.log(this.state.count); 
+
+    }
+    increamentFive() {
+        // this.State.count=this.state.count+1
+       this.increament()
+       this.increament()
+       this.increament()
+       this.increament()
+       this.increament()
 
 
     }
@@ -22,7 +35,7 @@ class Counter extends Component {
                 <p>
                     Count- {this.state.count}
                 </p>
-                <button className='btn btn-primary' onClick={() => this.increament()} >Increment</button>
+                <button className='btn btn-primary' onClick={() => this.increamentFive()} >Increment</button>
             </div>
         )
     }
