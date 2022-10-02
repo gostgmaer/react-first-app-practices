@@ -6,5 +6,13 @@ import React from 'react'
 //     <h1>Welcome Kishor</h1>
 //   )
 // }
-const Greed = ()=><h1>Kishor Welcome</h1>
+const Greed = (props) => {
+    console.log(props);
+    return (
+    <div>
+    <h1>Kishor {props.name}</h1>
+    {props.children}
+    </div>)
+}
+
 export default Greed
