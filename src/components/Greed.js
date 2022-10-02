@@ -1,18 +1,18 @@
-
-import React from 'react'
+import React from "react";
 
 // function Greed() {
 //   return (
 //     <h1>Welcome Kishor</h1>
 //   )
 // }
-const Greed = (props) => {
-    console.log(props);
-    return (
+const Greed = ({name,heroname}) => {
+  console.log(name);
+  return (
     <div>
-    <h1>Kishor {props.name}</h1>
-    {props.children}
-    </div>)
-}
+      <h1>Kishor {name}</h1>
+      {heroname}
+    </div>
+  );
+};
 
-export default Greed
+export default Greed;
