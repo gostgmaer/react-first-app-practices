@@ -3,7 +3,11 @@ import './App.css';
 import Greed from './components/Greed';
 import ClassComponent from './components/ClassComponent';
 import Helow from './components/Helow';
-import Welcome from './components/welcome'
+// import Welcome from './components/welcome';
+import Message from './components/message'
+import State from './components/state';
+
+
 
 function App() {
   return (
@@ -22,14 +26,17 @@ function App() {
           Learn React
         </a>
       </header> */}
+     <State></State>
      
       {/* <ClassComponent></ClassComponent>
       <Helow></Helow> */}
-       <Greed name="Kishor" />
+       {/* <Greed name="Kishor" />
        <Greed name="Sam" />
        <Greed name="ram" />
-        <Greed name="souvik" />
-        <Welcome name="Child Component"  ></Welcome>
+        <Greed name="souvik" /> */}
+        {/* <Welcome name="Child Component"  ></Welcome> */}
+   
+        <Message></Message>
     </div>
   );
 }
