@@ -2,19 +2,19 @@ import React, { Component } from 'react'
 
 class Counter extends Component {
     constructor(props) {
-      super(props)
-    
-      this.state = {
-         count:0
-      }
+        super(props)
+
+        this.state = {
+            count: 0
+        }
     }
-    increament(){
+    increament() {
         // this.State.count=this.state.count+1
         this.setState({
-            count : this.state.count+1
-        })
-        console.log(  this.state.count);
-        
+            count: this.state.count + 1
+        }, () => { console.log(this.state.count); })
+
+
     }
     render() {
         return (
@@ -22,7 +22,7 @@ class Counter extends Component {
                 <p>
                     Count- {this.state.count}
                 </p>
-                <button className='btn btn-primary' onClick={()=>this.increament()} >Increment</button>
+                <button className='btn btn-primary' onClick={() => this.increament()} >Increment</button>
             </div>
         )
     }
