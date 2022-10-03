@@ -22,10 +22,7 @@ class Counter extends Component {
     increamentFive() {
         // this.State.count=this.state.count+1
        this.increament()
-       this.increament()
-       this.increament()
-       this.increament()
-       this.increament()
+     
 
 
     }
