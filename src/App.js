@@ -18,6 +18,7 @@ import InlineCSS from "./components/InlineCSS";
 import "./assets/css/appStyles.css";
 import styles from "./assets/css/appStyles.module.css";
 import Form from "./components/Form";
+import PokemonTable from "./components/PokemonTable";
 
 function App() {
   return (
@@ -62,7 +63,8 @@ function App() {
       </h1>
       <Stylesheet primary={true}></Stylesheet>
       <InlineCSS></InlineCSS> */}
-      <Form></Form>
+      {/* <Form></Form> */}
+      <PokemonTable></PokemonTable>
     </div>
   );
 }
