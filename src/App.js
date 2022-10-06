@@ -7,6 +7,7 @@ import Helow from './components/Helow';
 import Message from './components/message'
 import State from './components/state';
 import Counter from './components/Counter';
+import EventHandling from './components/EventHandling';
 
 
 
@@ -39,6 +40,7 @@ function App() {
    
         {/* <Message></Message> */}
         <Counter></Counter>
+        <EventHandling></EventHandling>
     </div>
   );
 }
