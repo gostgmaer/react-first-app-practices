@@ -3,14 +3,23 @@ import { Games } from "../assets/data_js/boardGames";
 import * as Animals from "../assets/data/animals/common.json";
 import data from "../assets/data/data";
 import Sports from "./Sports";
+import CreateIndex from "./CreateIndex";
 
 function NameList() {
   // const GameList = Games.games.map((G) => <h2>{G}</h2>)
-  const soullist = data.eplTeams.epl_teams.map((S) => (
-    <Sports key={S.code} sports={S} />
+  const soullist = data.eplTeams.epl_teams.map((S, index) => (
+    <Sports key={index} sports={S} />
   ));
+
+  let pokemon = data.pokemon.pokemon.map((name, index) => (
+    <span key={index}>
+      {index} {name.name}
+      <br></br>{" "}
+    </span>
+  ));
+  // console.log(data.pokemon);
   // console.log(Animals.animals);
-  console.log(data.eplTeams.epl_teams);
+  // console.log(index);
   return (
     <div>
       {/* <h2>{Games.games[0]}</h2>
@@ -24,25 +33,37 @@ function NameList() {
       <table className="table ">
         <thead>
           <tr>
-          <th className="col" scope="row">
-            Code
-          </th>
-          <th className="col" scope="row">
-            Name
-          </th>
-          <th className="col" scope="row">
-            City
-          </th>
-          <th className="col" scope="row">
-            Stadim
-          </th>
-          <th className="col" scope="row">
-            Manager
-          </th></tr>
+            <th className="col" scope="row">
+              Code
+            </th>
+            <th className="col" scope="row">
+              Name
+            </th>
+            <th className="col" scope="row">
+              City
+            </th>
+            <th className="col" scope="row">
+              Stadim
+            </th>
+            <th className="col" scope="row">
+              Manager
+            </th>
+          </tr>
         </thead>
 
         {soullist}
       </table>
+
+      <span>{pokemon}</span>
+      {/* <div>
+        <ul class="list-group">
+          <li class="list-group-item">asasd</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div> */}
     </div>
   );
 }

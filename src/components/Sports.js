@@ -1,10 +1,13 @@
 import React from "react";
 
-function Sports(S) {
+function Sports(S,index) {
   // console.log(S);
   return (
     <tbody>
       <tr>
+      {/* <th className="col" scope="row">
+          {index}
+        </th> */}
         <th className="col" scope="row">
           {S.sports.code}
         </th>
