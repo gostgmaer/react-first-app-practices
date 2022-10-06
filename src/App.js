@@ -10,6 +10,9 @@ import Counter from './components/Counter';
 import EventHandling from './components/EventHandling';
 import ClassClickEvent from './components/ClassClickEvent';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 
 
 
@@ -44,7 +47,10 @@ function App() {
         {/* <Counter></Counter> */}
         {/* <EventHandling></EventHandling>
         <ClassClickEvent></ClassClickEvent> */}
-        <EventBind></EventBind>
+        {/* <EventBind></EventBind> */}
+        {/* <ParentComponent></ParentComponent> */}
+        {/* <UserGreeting></UserGreeting> */}
+        <NameList></NameList>
     </div>
   );
 }
