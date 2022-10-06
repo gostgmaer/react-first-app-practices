@@ -9,6 +9,7 @@ class UserGreeting extends Component {
     };
   }
   render() {
+   return this.state.isLoggedin&&<div>Welcome Sarkar</div>
     // if (this.state.isLoggedin) {
     //   return (
     //     <div>
@@ -22,13 +23,15 @@ class UserGreeting extends Component {
     //     </div>
     //   );
     // }
-    let message;
-    if (this.state.isLoggedin) {
-      message = <div>Welcome Sarkar</div>;
-    } else {
-      message = <div>Welcome Gause User</div>;
-    }
-    return <div>{message}</div>;
+    // let message;
+    // if (this.state.isLoggedin) {
+    //   message = <div>Welcome Sarkar</div>;
+    // } else {
+    //   message = <div>Welcome Gause User</div>;
+    // }
+    // return (
+    //     this.state.isLoggedin?<div>Welcome Sarkar</div>:<div>Welcome Gause</div>
+    // );
   }
 }
 
