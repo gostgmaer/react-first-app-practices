@@ -9,6 +9,7 @@ import State from './components/state';
 import Counter from './components/Counter';
 import EventHandling from './components/EventHandling';
 import ClassClickEvent from './components/ClassClickEvent';
+import EventBind from './components/EventBind';
 
 
 
@@ -29,7 +30,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-     <State></State>
+     {/* <State></State> */}
      
       {/* <ClassComponent></ClassComponent>
       <Helow></Helow> */}
@@ -41,8 +42,9 @@ function App() {
    
         {/* <Message></Message> */}
         {/* <Counter></Counter> */}
-        <EventHandling></EventHandling>
-        <ClassClickEvent></ClassClickEvent>
+        {/* <EventHandling></EventHandling>
+        <ClassClickEvent></ClassClickEvent> */}
+        <EventBind></EventBind>
     </div>
   );
 }
