@@ -11,6 +11,7 @@ import EventHandling from './components/EventHandling';
 import ClassClickEvent from './components/ClassClickEvent';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
+import UserGreeting from './components/UserGreeting';
 
 
 
@@ -46,7 +47,8 @@ function App() {
         {/* <EventHandling></EventHandling>
         <ClassClickEvent></ClassClickEvent> */}
         {/* <EventBind></EventBind> */}
-        <ParentComponent></ParentComponent>
+        {/* <ParentComponent></ParentComponent> */}
+        <UserGreeting></UserGreeting>
     </div>
   );
 }
