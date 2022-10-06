@@ -7,7 +7,7 @@ import Sports from "./Sports";
 function NameList() {
   // const GameList = Games.games.map((G) => <h2>{G}</h2>)
   const soullist = data.eplTeams.epl_teams.map((S) => (
-   <Sports sports={S} />
+    <Sports key={S.code} sports={S} />
   ));
   // console.log(Animals.animals);
   console.log(data.eplTeams.epl_teams);
@@ -21,7 +21,28 @@ function NameList() {
        <h2>{Games.games[5]}</h2>
        <h2>{Games.games[6]}</h2>
        <h2>{Games.games[7]}</h2> */}
-      {soullist}
+      <table className="table ">
+        <thead>
+          <tr>
+          <th className="col" scope="row">
+            Code
+          </th>
+          <th className="col" scope="row">
+            Name
+          </th>
+          <th className="col" scope="row">
+            City
+          </th>
+          <th className="col" scope="row">
+            Stadim
+          </th>
+          <th className="col" scope="row">
+            Manager
+          </th></tr>
+        </thead>
+
+        {soullist}
+      </table>
     </div>
   );
 }
