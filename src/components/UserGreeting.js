@@ -26,7 +26,7 @@ class UserGreeting extends Component {
     if (this.state.isLoggedin) {
       message = <div>Welcome Sarkar</div>;
     } else {
-      message = <div>Welcome Kishor</div>;
+      message = <div>Welcome Gause User</div>;
     }
     return <div>{message}</div>;
   }
