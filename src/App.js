@@ -17,6 +17,7 @@ import Stylesheet from "./components/Stylesheet";
 import InlineCSS from "./components/InlineCSS";
 import "./assets/css/appStyles.css";
 import styles from "./assets/css/appStyles.module.css";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -53,14 +54,15 @@ function App() {
       {/* <ParentComponent></ParentComponent> */}
       {/* <UserGreeting></UserGreeting> */}
       {/* <NameList></NameList> */}
-      <h1 className="error" >
+      {/* <h1 className="error" >
         Error
       </h1>
       <h1 className={styles.success} >
       success
       </h1>
       <Stylesheet primary={true}></Stylesheet>
-      <InlineCSS></InlineCSS>
+      <InlineCSS></InlineCSS> */}
+      <Form></Form>
     </div>
   );
 }
