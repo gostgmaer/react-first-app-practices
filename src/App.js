@@ -8,6 +8,7 @@ import Message from './components/message'
 import State from './components/state';
 import Counter from './components/Counter';
 import EventHandling from './components/EventHandling';
+import ClassClickEvent from './components/ClassClickEvent';
 
 
 
@@ -39,8 +40,9 @@ function App() {
         {/* <Welcome name="Child Component"  ></Welcome> */}
    
         {/* <Message></Message> */}
-        <Counter></Counter>
+        {/* <Counter></Counter> */}
         <EventHandling></EventHandling>
+        <ClassClickEvent></ClassClickEvent>
     </div>
   );
 }
