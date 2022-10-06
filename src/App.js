@@ -15,6 +15,8 @@ import UserGreeting from "./components/UserGreeting";
 import NameList from "./components/NameList";
 import Stylesheet from "./components/Stylesheet";
 import InlineCSS from "./components/InlineCSS";
+import "./assets/css/appStyles_module.css";
+import styles from "./assets/css/appStyles.css";
 
 function App() {
   return (
@@ -51,6 +53,12 @@ function App() {
       {/* <ParentComponent></ParentComponent> */}
       {/* <UserGreeting></UserGreeting> */}
       {/* <NameList></NameList> */}
+      <h1 className="error" >
+        Error
+      </h1>
+      <h1 className="success" >
+      success
+      </h1>
       <Stylesheet primary={true}></Stylesheet>
       <InlineCSS></InlineCSS>
     </div>
