@@ -20,6 +20,7 @@ import styles from "./assets/css/appStyles.module.css";
 import Form from "./components/Form";
 import PokemonTable from "./components/PokemonTable";
 import ReactLiftcycleM from "./components/ReactLiftcycleM";
+import UpdateLifeCycleMethodA from "./components/UpdateLifeCycleMethodA";
 
 function App() {
   return (
@@ -66,7 +67,8 @@ function App() {
       <InlineCSS></InlineCSS> */}
       {/* <Form></Form> */}
       {/* <PokemonTable></PokemonTable> */}
-      <ReactLiftcycleM></ReactLiftcycleM>
+      {/* <ReactLiftcycleM></ReactLiftcycleM> */}
+      <UpdateLifeCycleMethodA></UpdateLifeCycleMethodA>
     </div>
   );
 }
