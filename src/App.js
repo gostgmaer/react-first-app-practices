@@ -19,6 +19,7 @@ import "./assets/css/appStyles.css";
 import styles from "./assets/css/appStyles.module.css";
 import Form from "./components/Form";
 import PokemonTable from "./components/PokemonTable";
+import ReactLiftcycleM from "./components/ReactLiftcycleM";
 
 function App() {
   return (
@@ -64,7 +65,8 @@ function App() {
       <Stylesheet primary={true}></Stylesheet>
       <InlineCSS></InlineCSS> */}
       {/* <Form></Form> */}
-      <PokemonTable></PokemonTable>
+      {/* <PokemonTable></PokemonTable> */}
+      <ReactLiftcycleM></ReactLiftcycleM>
     </div>
   );
 }
