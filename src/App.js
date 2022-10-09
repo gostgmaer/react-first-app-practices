@@ -22,6 +22,7 @@ import PokemonTable from "./components/PokemonTable";
 import ReactLiftcycleM from "./components/ReactLiftcycleM";
 import UpdateLifeCycleMethodA from "./components/UpdateLifeCycleMethodA";
 import Frangment from "./components/Frangment";
+import Table from "./components/Table";
 
 function App() {
   return (
@@ -70,7 +71,8 @@ function App() {
       {/* <PokemonTable></PokemonTable> */}
       {/* <ReactLiftcycleM></ReactLiftcycleM> */}
       {/* <UpdateLifeCycleMethodA></UpdateLifeCycleMethodA> */}
-      <Frangment></Frangment>
+      {/* <Frangment></Frangment> */}
+      <Table></Table>
     </div>
   );
 }
