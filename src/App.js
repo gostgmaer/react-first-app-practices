@@ -31,6 +31,9 @@ import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRParantInput from "./components/FRParantInput";
 import PortalDemo from "./components/PortalDemo";
+import Modal from "./components/ModalCompnent";
+import ModalComponent from "./components/Modal/Modal";
+import Home from "./components/ModalCompnent";
 
 function App() {
   return (
@@ -88,7 +91,10 @@ function App() {
       {/* <RefsDemo></RefsDemo> */}
       {/* <FocusInput></FocusInput> */}
       {/* <FRParantInput></FRParantInput> */}
-      <PortalDemo></PortalDemo>
+      {/* <PortalDemo></PortalDemo> */}
+      {/* <Modal></Modal> */}
+      {/* <ModalComponent></ModalComponent> */}
+      <Home></Home>
     </div>
   );
 }
