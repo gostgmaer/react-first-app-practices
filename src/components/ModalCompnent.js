@@ -1,5 +1,6 @@
 import React from 'react';
 import ModalComponent from './Modal/Modal';
+import './Modal/styles.scss'
 
 export default class Home extends React.Component {
 
@@ -33,12 +34,13 @@ render() {
             {
                showModal ? (
                   <ModalComponent>
+                     <div className='my-modal'>
                      <h1>Heading</h1>
                      <p>Lorem ipsum </p>
                      <button 
                         className="modal-close"
                         onClick={this.toggleModal}
-                     >X</button>
+                     >X</button> </div>
                   </ModalComponent>
                ) : null
             }

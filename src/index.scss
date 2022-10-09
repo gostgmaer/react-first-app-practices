@@ -12,7 +12,9 @@ code {
     monospace;
 }
 
-
+#modal:empty{
+  display: none;
+}
 
 .App {
   width: 100%;
