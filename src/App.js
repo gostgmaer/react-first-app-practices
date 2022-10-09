@@ -21,6 +21,7 @@ import Form from "./components/Form";
 import PokemonTable from "./components/PokemonTable";
 import ReactLiftcycleM from "./components/ReactLiftcycleM";
 import UpdateLifeCycleMethodA from "./components/UpdateLifeCycleMethodA";
+import Frangment from "./components/Frangment";
 
 function App() {
   return (
@@ -68,7 +69,8 @@ function App() {
       {/* <Form></Form> */}
       {/* <PokemonTable></PokemonTable> */}
       {/* <ReactLiftcycleM></ReactLiftcycleM> */}
-      <UpdateLifeCycleMethodA></UpdateLifeCycleMethodA>
+      {/* <UpdateLifeCycleMethodA></UpdateLifeCycleMethodA> */}
+      <Frangment></Frangment>
     </div>
   );
 }
