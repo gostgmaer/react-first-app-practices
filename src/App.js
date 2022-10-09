@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import Greed from "./components/Greed";
 import ClassComponent from "./components/ClassComponent";
 import Helow from "./components/Helow";
@@ -29,6 +29,11 @@ import MemoComponent from "./components/MemoComponent";
 import MemoParentComponent from "./components/MemoParentComponent";
 import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
+import FRParantInput from "./components/FRParantInput";
+import PortalDemo from "./components/PortalDemo";
+import Modal from "./components/ModalCompnent";
+import ModalComponent from "./components/Modal/Modal";
+import Home from "./components/ModalCompnent";
 
 function App() {
   return (
@@ -84,7 +89,13 @@ function App() {
       {/* <MemoComponent></MemoComponent> */}
       {/* <MemoParentComponent></MemoParentComponent> */}
       {/* <RefsDemo></RefsDemo> */}
-      <FocusInput></FocusInput>
+      {/* <FocusInput></FocusInput> */}
+      {/* <FRParantInput></FRParantInput> */}
+      {/* <PortalDemo></PortalDemo> */}
+      {/* <Modal></Modal> */}
+      {/* <ModalComponent></ModalComponent> */}
+      <Home></Home>
+     
     </div>
   );
 }
