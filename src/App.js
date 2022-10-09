@@ -30,6 +30,7 @@ import MemoParentComponent from "./components/MemoParentComponent";
 import RefsDemo from "./components/RefsDemo";
 import FocusInput from "./components/FocusInput";
 import FRParantInput from "./components/FRParantInput";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
@@ -86,7 +87,8 @@ function App() {
       {/* <MemoParentComponent></MemoParentComponent> */}
       {/* <RefsDemo></RefsDemo> */}
       {/* <FocusInput></FocusInput> */}
-      <FRParantInput></FRParantInput>
+      {/* <FRParantInput></FRParantInput> */}
+      <PortalDemo></PortalDemo>
     </div>
   );
 }
