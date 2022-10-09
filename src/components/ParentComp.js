@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component,PureComponent } from 'react'
 import PureCompo from './PureComponent';
 import RegularComp from './RegularComp';
 
-class ParentComp extends Component {
+class ParentComp extends PureComponent {
     constructor(props) {
       super(props)
     
@@ -13,7 +13,7 @@ class ParentComp extends Component {
     componentDidMount(){
         setInterval(() => {
             this.setState({
-                name:"Kishor"
+                name:"Sarkar"
             })
         }, 5000);
     }
