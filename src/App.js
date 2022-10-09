@@ -27,6 +27,7 @@ import PureCompo from "./components/PureComponent";
 import ParentComp from "./components/ParentComp";
 import MemoComponent from "./components/MemoComponent";
 import MemoParentComponent from "./components/MemoParentComponent";
+import RefsDemo from "./components/RefsDemo";
 
 function App() {
   return (
@@ -80,7 +81,8 @@ function App() {
       {/* <PureCompo></PureCompo> */}
       {/* <ParentComp></ParentComp> */}
       {/* <MemoComponent></MemoComponent> */}
-      <MemoParentComponent></MemoParentComponent>
+      {/* <MemoParentComponent></MemoParentComponent> */}
+      <RefsDemo></RefsDemo>
     </div>
   );
 }
