@@ -21,6 +21,10 @@ import Form from "./components/Form";
 import PokemonTable from "./components/PokemonTable";
 import ReactLiftcycleM from "./components/ReactLiftcycleM";
 import UpdateLifeCycleMethodA from "./components/UpdateLifeCycleMethodA";
+import Frangment from "./components/Frangment";
+import Table from "./components/Table";
+import PureCompo from "./components/PureComponent";
+import ParentComp from "./components/ParentComp";
 
 function App() {
   return (
@@ -68,7 +72,11 @@ function App() {
       {/* <Form></Form> */}
       {/* <PokemonTable></PokemonTable> */}
       {/* <ReactLiftcycleM></ReactLiftcycleM> */}
-      <UpdateLifeCycleMethodA></UpdateLifeCycleMethodA>
+      {/* <UpdateLifeCycleMethodA></UpdateLifeCycleMethodA> */}
+      {/* <Frangment></Frangment> */}
+      {/* <Table></Table> */}
+      {/* <PureCompo></PureCompo> */}
+      <ParentComp></ParentComp>
     </div>
   );
 }
