@@ -25,6 +25,8 @@ import Frangment from "./components/Frangment";
 import Table from "./components/Table";
 import PureCompo from "./components/PureComponent";
 import ParentComp from "./components/ParentComp";
+import MemoComponent from "./components/MemoComponent";
+import MemoParentComponent from "./components/MemoParentComponent";
 
 function App() {
   return (
@@ -76,7 +78,9 @@ function App() {
       {/* <Frangment></Frangment> */}
       {/* <Table></Table> */}
       {/* <PureCompo></PureCompo> */}
-      <ParentComp></ParentComp>
+      {/* <ParentComp></ParentComp> */}
+      {/* <MemoComponent></MemoComponent> */}
+      <MemoParentComponent></MemoParentComponent>
     </div>
   );
 }
