@@ -34,6 +34,7 @@ import PortalDemo from "./components/PortalDemo";
 import Modal from "./components/ModalCompnent";
 import ModalComponent from "./components/Modal/Modal";
 import Home from "./components/ModalCompnent";
+import SnacbarIndex from "./components/Snacbar/SnacbarIndex";
 
 function App() {
   return (
@@ -94,7 +95,8 @@ function App() {
       {/* <PortalDemo></PortalDemo> */}
       {/* <Modal></Modal> */}
       {/* <ModalComponent></ModalComponent> */}
-      <Home></Home>
+      {/* <Home></Home> */}
+      <SnacbarIndex></SnacbarIndex>
      
     </div>
   );
