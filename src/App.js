@@ -37,6 +37,8 @@ import Home from "./components/ModalCompnent";
 import SnacbarIndex from "./components/Snacbar/SnacbarIndex";
 import Hero from "./components/Hero";
 import ErrorHandling from "./components/ErrorHandling";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
 
 function App() {
   return (
@@ -100,11 +102,14 @@ function App() {
       {/* <Home></Home> */}
       {/* <SnacbarIndex></SnacbarIndex> */}
 
-      <ErrorHandling>
+      {/* <ErrorHandling>
       <Hero heroName='batman' />
       <Hero heroName='Super Man' />
       {/* <Hero heroName='joker' /> */}
-      </ErrorHandling>
+      {/* </ErrorHandling> */}
+
+      <ClickCounter></ClickCounter>
+      <HoverCounter></HoverCounter>
 
 
      
