@@ -35,6 +35,8 @@ import Modal from "./components/ModalCompnent";
 import ModalComponent from "./components/Modal/Modal";
 import Home from "./components/ModalCompnent";
 import SnacbarIndex from "./components/Snacbar/SnacbarIndex";
+import Hero from "./components/Hero";
+import ErrorHandling from "./components/ErrorHandling";
 
 function App() {
   return (
@@ -96,7 +98,15 @@ function App() {
       {/* <Modal></Modal> */}
       {/* <ModalComponent></ModalComponent> */}
       {/* <Home></Home> */}
-      <SnacbarIndex></SnacbarIndex>
+      {/* <SnacbarIndex></SnacbarIndex> */}
+
+      <ErrorHandling>
+      <Hero heroName='batman' />
+      <Hero heroName='Super Man' />
+      {/* <Hero heroName='joker' /> */}
+      </ErrorHandling>
+
+
      
     </div>
   );
