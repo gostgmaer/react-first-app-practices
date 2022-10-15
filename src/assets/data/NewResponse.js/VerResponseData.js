@@ -1,4 +1,4 @@
-import { left } from "@popperjs/core";
+
 
 let waitingroom = {
   room_details: [
@@ -2963,4 +2963,8 @@ let tokenLists ={
         }
     ],
     "status": 200
+}
+
+export{
+    waitingRoomdetails,waitingroom,provider,providerDetails,queueAvarageWaitingTime,customerDetails,customerNotes,tokenLists
 }
