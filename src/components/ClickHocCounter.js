@@ -13,4 +13,4 @@ class ClickhocCounter extends Component {
   }
 }
 
-export default WithHocCounter(ClickhocCounter)
+export default WithHocCounter(ClickhocCounter, 5)
