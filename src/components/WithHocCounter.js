@@ -16,7 +16,7 @@ const WithHocCounter = WrapperComponent => {
       });
     };
     render() {
-      // console.log(this.state.name);
+     console.log(this.state.name);
       return (
         <WrapperComponent count={this.state.count}
         incrementCountData={this.incrementCountData} >

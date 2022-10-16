@@ -6,7 +6,7 @@ class HoverHocCounter extends Component {
     const {count,incrementCountData}=this.props
     return (
       <div>
-        <span className='h3' onMouseOver={incrementCountData} > Hover {count} Times </span>
+        <span className='h3' onMouseOver={incrementCountData} > {this.props.name} Hover {count} Times </span>
       </div>
     )
   }

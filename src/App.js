@@ -116,8 +116,8 @@ function App() {
 
       {/* <ClickCounter></ClickCounter>
       <HoverCounter></HoverCounter> */}
-      <HoverHocCounter></HoverHocCounter>
-      <ClickhocCounter></ClickhocCounter>
+      <HoverHocCounter name="Sarkar" ></HoverHocCounter>
+      <ClickhocCounter  name="Kishor" ></ClickhocCounter>
       {/* <ClickHocCounter></ClickHocCounter>
       <HoverHocCounter></HoverHocCounter> */}
       
