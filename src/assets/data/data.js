@@ -6,6 +6,7 @@ let data = {
   jeopardy_questions: require("./games/jeopardy_questions.json"),
   pokemon: require("./games/pokemon.json"),
   eplTeams: require("./sports/football/epl_teams.json"),
+  verData:require("./NewResponse.js/VerResponseData.js")
  
 };
 

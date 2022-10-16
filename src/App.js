@@ -39,6 +39,12 @@ import Hero from "./components/Hero";
 import ErrorHandling from "./components/ErrorHandling";
 import ClickCounter from "./components/ClickCounter";
 import HoverCounter from "./components/HoverCounter";
+// import ClickHocCounter from "./components/ClickHocCounter";
+// import HoverHocCounter from "./components/HoverHocCounter";
+import HoverHocCounter from "./components/HOC/HoverCounter";
+import ClickhocCounter from "./components/HOC/ClickCounter";
+
+
 
 function App() {
   return (
@@ -108,8 +114,13 @@ function App() {
       {/* <Hero heroName='joker' /> */}
       {/* </ErrorHandling> */}
 
-      <ClickCounter></ClickCounter>
-      <HoverCounter></HoverCounter>
+      {/* <ClickCounter></ClickCounter>
+      <HoverCounter></HoverCounter> */}
+      <HoverHocCounter></HoverHocCounter>
+      <ClickhocCounter></ClickhocCounter>
+      {/* <ClickHocCounter></ClickHocCounter>
+      <HoverHocCounter></HoverHocCounter> */}
+      
 
 
      
