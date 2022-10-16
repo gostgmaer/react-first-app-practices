@@ -6,7 +6,7 @@ import Helow from "./components/Helow";
 // import Welcome from './components/welcome';
 import Message from "./components/message";
 import State from "./components/state";
-import Counter from "./components/Counter";
+// import Counter from "./components/Counter";
 import EventHandling from "./components/EventHandling";
 import ClassClickEvent from "./components/ClassClickEvent";
 import EventBind from "./components/EventBind";
@@ -43,12 +43,14 @@ import HoverCounter from "./components/HoverCounter";
 // import HoverHocCounter from "./components/HoverHocCounter";
 import HoverHocCounter from "./components/HOC/HoverCounter";
 import ClickhocCounter from "./components/HOC/ClickCounter";
-
-
+import ClickCounterTwo from "./components/Randerprops/ClickCounterTwo";
+import HoverCounterTwo from "./components/Randerprops/HoverCounterTwo";
+import User from "./components/Randerprops/User";
+import Counter from "./components/Randerprops/Counter";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App d-block">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -116,15 +118,20 @@ function App() {
 
       {/* <ClickCounter></ClickCounter>
       <HoverCounter></HoverCounter> */}
-      <HoverHocCounter></HoverHocCounter>
-      <ClickhocCounter></ClickhocCounter>
+      {/* <HoverHocCounter name="Sarkar" ></HoverHocCounter>
+      <ClickhocCounter  name="Kishor" ></ClickhocCounter> */}
       {/* <ClickHocCounter></ClickHocCounter>
       <HoverHocCounter></HoverHocCounter> */}
-      
-
-
-     
-    </div>
+      {/* <ClickCounterTwo></ClickCounterTwo>
+      <HoverCounterTwo />
+      <User render={(isLockedIn) => (isLockedIn ? "Kishor" : "Guest")}></User> */}
+      <Counter className=" d-block"  render={(count, incrementCount) =>(
+        <ClickCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </ClickCounterTwo>
+      ) } ></Counter>
+     <Counter className=" d-block" render={(count, incrementCount) =>(
+        <HoverCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </HoverCounterTwo>
+      ) } ></Counter>
+   </div>
   );
 }
 

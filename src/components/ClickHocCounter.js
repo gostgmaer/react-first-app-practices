@@ -7,10 +7,10 @@ class ClickhocCounter extends Component {
    
     return (
       <div>
-        <button className='btn btn-primary' onClick={incrementCountData} > CLick {count} Times </button>
+        <button className='btn btn-primary' onClick={incrementCountData} > {this.props.name} CLick {count} Times </button>
       </div>
     )
   }
 }
 
-export default WithHocCounter(ClickhocCounter)
+export default WithHocCounter(ClickhocCounter, 5)

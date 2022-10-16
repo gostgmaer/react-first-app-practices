@@ -1,6 +1,6 @@
 import React from "react";
 
-const WithHocCounter = WrapperComponent => {
+const WithHocCounter = (WrapperComponent,incrementNumber) => {
   class WithHocCounter extends React.Component {
     constructor(props) {
       super(props);
@@ -10,13 +10,15 @@ const WithHocCounter = WrapperComponent => {
       };
     }
     incrementCountData = () => {
-      console.log("it's working");
+      // console.log("it's working");
       this.setState((prevState) => {
-        return { count: prevState.count + 1 };
+        console.log(incrementNumber);
+        return { count: prevState.count + incrementNumber };
+        
       });
     };
     render() {
-      // console.log(this.state.name);
+    //  console.log(this.state.name);
       return (
         <WrapperComponent count={this.state.count}
         incrementCountData={this.incrementCountData} >
