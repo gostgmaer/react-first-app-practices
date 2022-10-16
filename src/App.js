@@ -34,6 +34,17 @@ import PortalDemo from "./components/PortalDemo";
 import Modal from "./components/ModalCompnent";
 import ModalComponent from "./components/Modal/Modal";
 import Home from "./components/ModalCompnent";
+import SnacbarIndex from "./components/Snacbar/SnacbarIndex";
+import Hero from "./components/Hero";
+import ErrorHandling from "./components/ErrorHandling";
+import ClickCounter from "./components/ClickCounter";
+import HoverCounter from "./components/HoverCounter";
+// import ClickHocCounter from "./components/ClickHocCounter";
+// import HoverHocCounter from "./components/HoverHocCounter";
+import HoverHocCounter from "./components/HOC/HoverCounter";
+import ClickhocCounter from "./components/HOC/ClickCounter";
+
+
 
 function App() {
   return (
@@ -94,7 +105,24 @@ function App() {
       {/* <PortalDemo></PortalDemo> */}
       {/* <Modal></Modal> */}
       {/* <ModalComponent></ModalComponent> */}
-      <Home></Home>
+      {/* <Home></Home> */}
+      {/* <SnacbarIndex></SnacbarIndex> */}
+
+      {/* <ErrorHandling>
+      <Hero heroName='batman' />
+      <Hero heroName='Super Man' />
+      {/* <Hero heroName='joker' /> */}
+      {/* </ErrorHandling> */}
+
+      {/* <ClickCounter></ClickCounter>
+      <HoverCounter></HoverCounter> */}
+      <HoverHocCounter></HoverHocCounter>
+      <ClickhocCounter></ClickhocCounter>
+      {/* <ClickHocCounter></ClickHocCounter>
+      <HoverHocCounter></HoverHocCounter> */}
+      
+
+
      
     </div>
   );
