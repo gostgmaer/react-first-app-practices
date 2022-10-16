@@ -50,7 +50,7 @@ import Counter from "./components/Randerprops/Counter";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App d-block">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -125,10 +125,10 @@ function App() {
       {/* <ClickCounterTwo></ClickCounterTwo>
       <HoverCounterTwo />
       <User render={(isLockedIn) => (isLockedIn ? "Kishor" : "Guest")}></User> */}
-      <Counter render={(count, incrementCount) =>(
+      <Counter className=" d-block"  render={(count, incrementCount) =>(
         <ClickCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </ClickCounterTwo>
       ) } ></Counter>
-     <Counter render={(count, incrementCount) =>(
+     <Counter className=" d-block" render={(count, incrementCount) =>(
         <HoverCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </HoverCounterTwo>
       ) } ></Counter>
    </div>

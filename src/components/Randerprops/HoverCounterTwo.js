@@ -5,11 +5,11 @@ class HoverCounterTwo extends Component {
   render() {
     const { count,incrementCount}=this.props
     return (
-      <div>
-        <span onMouseOver={incrementCount}>
+      <div className=" border d-block" >
+        <span className=" h3" onMouseOver={incrementCount}>
           Hover {count} Times
         </span> <br/>
-        
+       
       </div>
     );
   }
