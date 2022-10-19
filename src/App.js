@@ -49,6 +49,8 @@ import User from "./components/Randerprops/User";
 import Counter from "./components/Randerprops/Counter";
 import ComponentC from "./components/ReactContext/ComponentC";
 import { UserProvider } from "./components/ReactContext/UserContext";
+import PostList from "./components/Http/PostList";
+import GetRequest from "./components/Http/GetRequest";
 // import UserProvider from "./components/ReactContext/UserContext";
 
 function App() {
@@ -134,13 +136,15 @@ function App() {
      <Counter className=" d-block" render={(count, incrementCount) =>(
         <HoverCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </HoverCounterTwo>
       ) } ></Counter> */}
-      <UserProvider value="Kishor">
+      {/* <UserProvider value="Kishor">
       <ComponentC >
 
       </ComponentC>
-      </UserProvider>
+      </UserProvider> */}
       {/* <ComponentC></ComponentC> */}
-     
+      {/* <PostList></PostList>
+      */}
+      <GetRequest></GetRequest>
      
    </div>
   );
