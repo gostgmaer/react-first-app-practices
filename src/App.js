@@ -51,6 +51,7 @@ import ComponentC from "./components/ReactContext/ComponentC";
 import { UserProvider } from "./components/ReactContext/UserContext";
 import PostList from "./components/Http/PostList";
 import GetRequest from "./components/Http/GetRequest";
+import PostForm from "./components/Http/PostForm";
 // import UserProvider from "./components/ReactContext/UserContext";
 
 function App() {
@@ -144,7 +145,8 @@ function App() {
       {/* <ComponentC></ComponentC> */}
       {/* <PostList></PostList>
       */}
-      <GetRequest></GetRequest>
+      {/* <GetRequest></GetRequest> */}
+      <PostForm></PostForm>
      
    </div>
   );
