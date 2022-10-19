@@ -47,6 +47,9 @@ import ClickCounterTwo from "./components/Randerprops/ClickCounterTwo";
 import HoverCounterTwo from "./components/Randerprops/HoverCounterTwo";
 import User from "./components/Randerprops/User";
 import Counter from "./components/Randerprops/Counter";
+import ComponentC from "./components/ReactContext/ComponentC";
+import { UserProvider } from "./components/ReactContext/UserContext";
+// import UserProvider from "./components/ReactContext/UserContext";
 
 function App() {
   return (
@@ -125,12 +128,20 @@ function App() {
       {/* <ClickCounterTwo></ClickCounterTwo>
       <HoverCounterTwo />
       <User render={(isLockedIn) => (isLockedIn ? "Kishor" : "Guest")}></User> */}
-      <Counter className=" d-block"  render={(count, incrementCount) =>(
+      {/* <Counter className=" d-block"  render={(count, incrementCount) =>(
         <ClickCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </ClickCounterTwo>
       ) } ></Counter>
      <Counter className=" d-block" render={(count, incrementCount) =>(
         <HoverCounterTwo ClickCounterTwo count={count} incrementCount={incrementCount}> </HoverCounterTwo>
-      ) } ></Counter>
+      ) } ></Counter> */}
+      <UserProvider value="Kishor">
+      <ComponentC >
+
+      </ComponentC>
+      </UserProvider>
+      {/* <ComponentC></ComponentC> */}
+     
+     
    </div>
   );
 }
