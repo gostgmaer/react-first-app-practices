@@ -29,6 +29,19 @@ class PostForm extends Component {
       });
 
   }
+  editPosthandler=(e)=>{
+    e.preventDefault()
+    console.log(this.state);
+    axios.patch(`https://jsonplaceholder.typicode.com/posts/${this.state.userId}`,this.state)
+    .then((response) => {
+        console.log(response);
+        this.setState({ posts: response });
+      })
+      .catch((error) => {
+        console.log(error);
+        this.setState({ errorMessage: "Not getting Data From Response" });
+      });
+  }
   render() {
     const { userId, title, body } = this.state;
     return (
@@ -72,6 +85,7 @@ class PostForm extends Component {
             Submit
           </button>
         </form>
+        <button type="button" onClick={this.editPosthandler} name="edit" className="btn btn-primary">Edit Post</button>
       </div>
     );
   }

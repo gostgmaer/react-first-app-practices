@@ -41,7 +41,7 @@ class DeleteRequest extends Component {
               value={postID}
             ></input>
           </div>
-          <button type="button" name='delete' id='button' onClick={this.deletePost} class="btn btn-primary">Delete Post</button>
+          <button type="button" name='delete' id='button' onClick={this.deletePost} className="btn btn-primary">Delete Post</button>
       </div>
     )
   }
