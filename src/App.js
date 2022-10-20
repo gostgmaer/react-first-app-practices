@@ -52,6 +52,7 @@ import { UserProvider } from "./components/ReactContext/UserContext";
 import PostList from "./components/Http/PostList";
 import GetRequest from "./components/Http/GetRequest";
 import PostForm from "./components/Http/PostForm";
+import DeleteRequest from "./components/Http/DeleteRequest";
 // import UserProvider from "./components/ReactContext/UserContext";
 
 function App() {
@@ -147,6 +148,7 @@ function App() {
       */}
       {/* <GetRequest></GetRequest> */}
       <PostForm></PostForm>
+      <DeleteRequest></DeleteRequest>
      
    </div>
   );
